@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart City Parking</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#reservation-section">Book Now</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Book & Pay for Parking Smartly</h1>
+    <p id="city-info">Loading city...</p>
+
+    <div id="map"></div>
+
+    <section id="reservation-section">
+      <h2>Reserve Your Spot</h2>
+      <form id="reservation-form">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="text" id="vehicle-number" placeholder="Vehicle Number" required />
+        <input type="date" id="date" required />
+        <input type="time" id="time" required />
+        <button type="submit">Reserve Now</button>
+      </form>
+      <div id="status"></div>
+    </section>
+  </main>
+</body>
+</html>
